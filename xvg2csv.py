@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import os,sys
-
+ 
 delimiter = ','
 
 fname = sys.argv[1]
