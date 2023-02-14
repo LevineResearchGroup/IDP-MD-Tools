@@ -42,7 +42,7 @@ def get_cmap(n, name='viridis'):
 color = sns.color_palette('deep', 5, desat=1)
 
 #Data Path:
-path = "/Users/bab226/Documents/yale_research/iapp/md_sims/iapp_adm116/new_files/analysis/dssp/"
+path = "/Users/bab226/Documents/yale_research/iapp/md_sims/iapp_30mer/5_prod/analysis/dssp/"
 path2 = "/Users/bab226/Documents/yale_research/iapp/md_sims/iapp_monomer/analysis/dssp/"
 
 #CSV-converted xvg files
@@ -84,39 +84,39 @@ ax.set_ylim(0, 1)
 ax.legend(loc="best", fontsize=6)
 my_xticks = ['Lys1', 'Cys2', 'Asn3', 'Thr4', 'Ala5', 'Thr6', 'Cys7', 'Ala8', 'Thr9', 'Gln10', 'Arg11', 'Leu12', 'Ala13', 'Asn14', 'Phe15', 'Leu16', 'Val17', 'His18', 'Ser19', 'Ser20', 'Asn21', 'Asn22', 'Phe23', 'Gly24', 'Ala25', 'Ile26', 'Leu27', 'Ser28', 'Ser29', 'Thr30', 'Asn31', 'Val32', 'Gly33', 'Ser34', 'Asn35', 'Thr36', 'Tyr37']
 plt.xticks(residue, my_xticks, rotation=90)
-plt.rc('xtick', labelsize=5) 
+plt.rc('xtick', labelsize=3) 
 plt.tick_params(axis='both', which='major', pad=2)
 plt.savefig(path + 'dssp_iapp_adm.png', dpi=300, transparent=False, bbox_inches='tight')
 
 
-fig2, ax = plt.subplots(1, 1, figsize=(width,width/2.3))
+# fig2, ax = plt.subplots(1, 1, figsize=(width,width/2.3))
 
-i = random.randint(0,4)
-#ax.plot(residue, idr_diff, color=color[0], label=i)
-ax.plot(residue, alpha2, color=color[1], label='a-helix')
-ax.plot(residue, beta2, color=color[2], label='beta-sheet')
-ax.set_xlabel('Residue', labelpad=5)
-ax.set_ylabel('Probability')
-ax.set_ylim(0, 1)
-ax.legend(loc="best", fontsize=6)
-my_xticks = ['Lys1', 'Cys2', 'Asn3', 'Thr4', 'Ala5', 'Thr6', 'Cys7', 'Ala8', 'Thr9', 'Gln10', 'Arg11', 'Leu12', 'Ala13', 'Asn14', 'Phe15', 'Leu16', 'Val17', 'His18', 'Ser19', 'Ser20', 'Asn21', 'Asn22', 'Phe23', 'Gly24', 'Ala25', 'Ile26', 'Leu27', 'Ser28', 'Ser29', 'Thr30', 'Asn31', 'Val32', 'Gly33', 'Ser34', 'Asn35', 'Thr36', 'Tyr37']
-plt.xticks(residue, my_xticks, rotation=90)
-plt.rc('xtick', labelsize=5) 
-plt.tick_params(axis='both', which='major', pad=2)
-plt.savefig(path2 + 'dssp_iapp.png', dpi=300, transparent=False, bbox_inches='tight')
+# i = random.randint(0,4)
+# #ax.plot(residue, idr_diff, color=color[0], label=i)
+# ax.plot(residue, alpha2, color=color[1], label='a-helix')
+# ax.plot(residue, beta2, color=color[2], label='beta-sheet')
+# ax.set_xlabel('Residue', labelpad=5)
+# ax.set_ylabel('Probability')
+# ax.set_ylim(0, 1)
+# ax.legend(loc="best", fontsize=6)
+# my_xticks = ['Lys1', 'Cys2', 'Asn3', 'Thr4', 'Ala5', 'Thr6', 'Cys7', 'Ala8', 'Thr9', 'Gln10', 'Arg11', 'Leu12', 'Ala13', 'Asn14', 'Phe15', 'Leu16', 'Val17', 'His18', 'Ser19', 'Ser20', 'Asn21', 'Asn22', 'Phe23', 'Gly24', 'Ala25', 'Ile26', 'Leu27', 'Ser28', 'Ser29', 'Thr30', 'Asn31', 'Val32', 'Gly33', 'Ser34', 'Asn35', 'Thr36', 'Tyr37']
+# plt.xticks(residue, my_xticks, rotation=90)
+# plt.rc('xtick', labelsize=3) 
+# plt.tick_params(axis='both', which='major', pad=2)
+# plt.savefig(path2 + 'dssp_iapp.png', dpi=300, transparent=False, bbox_inches='tight')
 
-fig3, ax = plt.subplots(1, 1, figsize=(width,width/2.3))
+# fig3, ax = plt.subplots(1, 1, figsize=(width,width/2.3))
 
-i = random.randint(0,4)
-#ax.plot(residue, idr_diff, color=color[0], label=i)
-ax.plot(residue, alpha_diff, color=color[1], label="a-helix")
-ax.plot(residue, beta_diff, color=color[2], label="beta-sheet")
-ax.set_xlabel('Residue', labelpad=5)
-ax.set_ylabel('Probability')
-ax.set_ylim(-0.3, 0.3)
-ax.legend(loc="best", fontsize=6)
-my_xticks = ['Lys1', 'Cys2', 'Asn3', 'Thr4', 'Ala5', 'Thr6', 'Cys7', 'Ala8', 'Thr9', 'Gln10', 'Arg11', 'Leu12', 'Ala13', 'Asn14', 'Phe15', 'Leu16', 'Val17', 'His18', 'Ser19', 'Ser20', 'Asn21', 'Asn22', 'Phe23', 'Gly24', 'Ala25', 'Ile26', 'Leu27', 'Ser28', 'Ser29', 'Thr30', 'Asn31', 'Val32', 'Gly33', 'Ser34', 'Asn35', 'Thr36', 'Tyr37']
-plt.xticks(residue, my_xticks, rotation=90)
-plt.rc('xtick', labelsize=5) 
-plt.tick_params(axis='both', which='major', pad=2)
-plt.savefig(path + 'dssp_diff.png', dpi=300, transparent=False, bbox_inches='tight')
+# i = random.randint(0,4)
+# #ax.plot(residue, idr_diff, color=color[0], label=i)
+# ax.plot(residue, alpha_diff, color=color[1], label="a-helix")
+# ax.plot(residue, beta_diff, color=color[2], label="beta-sheet")
+# ax.set_xlabel('Residue', labelpad=5)
+# ax.set_ylabel('Probability')
+# ax.set_ylim(-0.3, 0.3)
+# ax.legend(loc="best", fontsize=6)
+# my_xticks = ['Lys1', 'Cys2', 'Asn3', 'Thr4', 'Ala5', 'Thr6', 'Cys7', 'Ala8', 'Thr9', 'Gln10', 'Arg11', 'Leu12', 'Ala13', 'Asn14', 'Phe15', 'Leu16', 'Val17', 'His18', 'Ser19', 'Ser20', 'Asn21', 'Asn22', 'Phe23', 'Gly24', 'Ala25', 'Ile26', 'Leu27', 'Ser28', 'Ser29', 'Thr30', 'Asn31', 'Val32', 'Gly33', 'Ser34', 'Asn35', 'Thr36', 'Tyr37']
+# plt.xticks(residue, my_xticks, rotation=90)
+# plt.rc('xtick', labelsize=3) 
+# plt.tick_params(axis='both', which='major', pad=2)
+# plt.savefig(path + 'dssp_diff.png', dpi=300, transparent=False, bbox_inches='tight')

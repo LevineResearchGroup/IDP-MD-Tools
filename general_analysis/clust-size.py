@@ -21,7 +21,7 @@ def get_cmap(n, name='viridis'):
 color = sns.color_palette('deep', 5, desat=1)
 
 #Data Path:
-path = "/Users/bab226/Documents/yale_research/iapp/md_sims/iapp_monomer/analysis/cluster/"
+path = "/Users/bab226/Documents/yale_research/iapp/md_sims/remd_iapp/iapp_adm116/new_files/analysis/cluster/cluster_helix/"
 
 #CSV-converted xvg files
 width = 3.42
@@ -40,6 +40,6 @@ i = random.randint(0,4)
 ax.plot(cluster, prob, color=color[0], label=i)
 ax.set_xlabel('Cluster')
 ax.set_ylabel('Probability')
-ax.set_ylim(0, 0.05)
+ax.set_ylim(0, 0.1)
 
 plt.savefig(path + 'clust-size.png', dpi=300, transparent=False, bbox_inches='tight')
