@@ -1,2 +1,3 @@
-# md_simulations
-md_simulations contains wrapper scripts for GROMACS molecular dynamics simulations (MD) and enhanced sampling methods (e.g. REMD).
+# GROMACS and REMD
+1. REMD Folder: Enhanced sampling methods (e.g. REMD) and scripts.
+2. Gromacs_analysis folder: Wrapper scripts for GROMACS molecular dynamics simulations (MD).
